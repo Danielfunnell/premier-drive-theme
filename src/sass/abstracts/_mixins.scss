@@ -1,0 +1,63 @@
+@mixin icon-vertical-align { //lines up icons
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top:-5px; 
+    margin-right:10px;
+}
+
+@mixin clear-float {
+    .clearfix {zoom: 1}
+    .clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    }
+}
+
+//MEDIA QUERy MANAGER //Max is more than. Min is less than
+
+/* 
+
+0-600px:           Phone
+
+600-900px:        Tablet portrait
+
+900-1200px:       Tablet landscape
+
+[1200-1800px]     Normal code applies
+
+1800px +          Big desktop
+
+*/
+
+
+/* Breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+//ORDER: Base + Typograpghy > general layout + grid >  page layout > components
+
+1em= 16px. Em work much better in media queries
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == small-phone {
+        @media screen and (min-width: 23em) { @content };   //370px
+    }
+    @if $breakpoint == phone {
+        @media only screen and (min-width: 36em) { @content };  //576px //only screen use incase some wants to print out file so media query does not apply
+    }
+    @if $breakpoint == tab-port {
+        @media screen and (min-width: 48em) { @content };   //768px
+    }
+    @if $breakpoint == tab-land {
+        @media screen and (min-width: 62em) { @content };  //992px
+    }
+    @if $breakpoint == desktop {
+        @media screen and (min-width: 75em) { @content };  //1200px
+    }
+}

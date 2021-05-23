@@ -1,0 +1,99 @@
+.intensive-courses {
+    position: relative;
+    padding-bottom: 5rem;
+    
+
+    &__for-you {
+        background-color: $color-light-grey;
+        
+        
+    }
+
+    &__question{
+        margin-bottom: 2rem;
+        padding:1rem;
+        color: $color-white;
+        background-color: $color-coral;
+        border-radius: 1rem;
+        
+        @include respond(tab-land) {
+            margin-bottom: 5rem;
+            padding:1rem;
+            height:60%;
+           
+        }
+
+        &--first{
+            background-color: $color-white;
+            text-align: center;
+            padding:1rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            
+            @include respond(tab-land) {
+                padding:1rem;
+                margin: 0 25%;
+                margin-bottom: 2rem;
+            }
+        }
+       
+    }
+
+
+    &__heading {
+        margin-bottom:5rem; 
+        
+    } 
+
+  
+
+    &__img {
+        border-radius: 10rem 0rem 0rem 10rem;
+        position: relative;
+        display:none;
+    
+        
+       
+        
+        
+        @include respond(tab-land) {
+            display: inline-block;
+            border-radius: 10rem 0rem 0rem 10rem;
+            position: absolute;
+            overflow: hidden;
+            width: 30rem;
+            top:10%;
+            right:0;
+            
+        }
+       
+
+    }
+
+
+
+    &__side {
+        background-color: $color-light-grey;
+        position: relative;
+        width:auto;
+        padding: 1rem;
+        border-radius: .7rem;
+        
+        
+        @include respond(tab-land) {
+            background-color: $color-light-grey;
+            position: absolute;
+            bottom:10%;
+            left:15%;
+            margin-left: 2rem;
+            padding: 1rem;
+            border-radius: .7rem;
+            
+        }
+    }
+
+    
+
+
+}
+

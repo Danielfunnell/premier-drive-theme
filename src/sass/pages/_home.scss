@@ -1,0 +1,198 @@
+.welcome {
+    padding-top: 1rem;
+    
+    @include respond(tab-port) {
+        padding-top: 5rem;
+    }
+}
+
+
+.our-courses {
+    position: relative;
+    background-color: $secondary;
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+    
+.testomonials {
+    position:relative;
+    padding-top:0;
+
+    &__heading {
+        padding-top: 5rem;
+    }
+
+
+    &__background {
+    width: 100%;
+    background-image: url();
+    top:0;
+    left:0;
+    background-position: left;
+    text-align: center;
+    padding-bottom: 3.5rem;
+    transition: all ease-out;
+
+    @include respond(tab-port) {
+        
+        background-image: url(./../../src/css/img/car-overlay-min.jpg);
+        background-size: cover;
+    
+    }
+    }
+
+}
+
+.why-us {
+    text-align: center;
+    background-image: linear-gradient(175deg,
+        rgba($color-secondary, 0.9) 0%,
+        rgba($color-secondary, 0.9) 67%,
+        transparent 67.88%);
+    position: relative;
+    display:block;
+    z-index: 100;
+
+
+    @include respond(tab-land) {
+      
+        background-image: linear-gradient(175deg, rgba(43, 48, 58, 0.9) 82%, rgba(43, 48, 58, 0.9) 79.9%, transparent 83%);
+    
+    }
+
+    &__icon-container {
+        text-align: center;
+        width:100%;
+        margin: 4rem 2rem;
+        
+
+        @include respond(tab-land) {
+            margin: 2rem 2rem 6rem 2rem;
+        }
+    }
+
+    &__icon-para {
+        text-align: left;
+        margin-left: 40px;
+        margin-bottom: 1.75rem;
+        color: $color-silver; 
+    }
+
+
+    &__icon-para:last-child {
+        padding-bottom: 5rem;
+    }
+
+    &__img {
+        position: relative;
+        width:auto;
+        height: 20rem;
+        margin-top: 4rem;
+        border-radius: 50rem;
+    
+        
+        @include respond(tab-land) {
+            border-radius: 50rem;
+            position: absolute;
+            bottom:-1rem;
+            right:10%;
+            height:auto;
+        }
+    }
+
+    &__heading {
+        color: $color-silver;
+    }
+}
+
+
+
+.pricing {
+    background-color: $color-light-grey;
+    margin-bottom: 5rem;
+}
+
+iframe {
+    width: 100%;
+}
+
+.contact-us {
+    position: relative;
+    background-color: $color-white;
+}
+
+.section-contact-us__diagonal {
+    background-color: $secondary;
+    top:24rem;
+    left:0;
+    height:90rem;
+    position: absolute;
+    width: 100%;
+    clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
+
+    @include respond(tab-land) {
+        top:20rem;
+        left:0;
+        height:57rem;
+        position: absolute;
+        width: 100%;
+        clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+.areas-covered {
+        background-color: transparent;
+        position: relative;
+        overflow: hidden;
+   
+
+    &__map{
+        margin: 3rem 0;
+        
+    }
+
+    &__side {
+        margin: 3rem 0;
+        background-color: $secondary;
+        padding: 1rem;
+        border-radius: .3rem;
+    }
+
+
+    &__weekly{
+        list-style: none;
+
+        i {
+            color: #ff5252;
+            font-size: 1.3rem
+        }
+        
+    }
+
+    &__intensive{
+        list-style: none;
+
+        i {
+            color: #0288d1;
+            font-size: 1.3rem
+        }
+        
+    }
+
+
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+
+
+

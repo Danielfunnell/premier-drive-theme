@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-size: 90%; /*root font size. Default font size of browser is 16px. Always select in percentage so if user changes browser default it scales. So 10/16 = 62.5%. Easier to set 10px then 1 rem would = 10px.*/
+  
+/*@include respond(phone) { Dont this query as it also applies for the tab-port as below 900px
+    font-size: 50%; 
+}*/ 
+
+@include respond(phone) {
+    font-size: 100%; //1rem =8px, 8/16 =50%
+}
+
+@include respond(tab-port) {
+    font-size: 100%; //1rem =8px, 8/16 =50%
+}
+
+@include respond(tab-land) { 
+    font-size: 100%;
+}
+
+
+@include respond(big-desktop) {
+    font-size: 100%; 
+}
+
+}
+
+body {
+    padding-top:4.8rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    
+
+}
+
+.body-no-scroll {
+    overflow: hidden;
+}
+
+section {padding-top: 4rem;
+}
+
+span{
+    height: 2rem;
+    color: $color-nav-link;
+}
+
+.inset {
+    -webkit-box-shadow: inset 0 2px 3px 0 rgba(0,0,0,0.12);
+    box-shadow: inset 0 2px 3px 0 rgba(0,0,0,0.12);
+}

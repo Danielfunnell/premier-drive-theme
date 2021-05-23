@@ -1,0 +1,144 @@
+.survey-signup {
+    width: 100%;
+    margin: 3rem auto;
+
+    
+    @include respond(tab-land) {
+        width:60%;
+        padding:1.5rem;
+    }
+
+}
+
+.input-btn {
+    margin-right:1rem;
+}
+
+
+
+.question-box {
+    
+    width: 100%;
+    margin: 5rem auto;
+
+    @include respond(tab-land) {
+        width:60%;
+        padding:1.5rem;
+    }
+
+    &__question{
+        margin-bottom: 1rem;
+        
+    }
+
+    &__progress-bar{
+
+        display:flex;
+        width: 100%;
+        margin: 2rem auto;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+
+
+    }
+
+    &__step{
+        text-align: center;
+        
+
+    }
+
+    &__bullet {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 100%;
+        border: 2px solid $color-mid-grey;
+        line-height: 1.75rem;
+        color: $color-dark-grey;
+        display: inline-block;
+        position: relative;
+        transition: background-color .2s ease-out;
+        
+
+    }
+
+    &__line::after{
+        content: '';
+        position: absolute;
+        width:3rem;
+        height:.1rem;
+        background-color: $color-mid-grey;
+        bottom: .9rem;
+        margin-left:.2rem;
+
+        @include respond(tab-land) {
+            width:5.1rem;
+        }
+        
+       
+    }
+
+    &__bullet.completed {
+        color: $color-white;
+        background-color: $primary;
+        border: 2px solid $primary;
+        z-index: 888;
+    }
+
+    &__bullet.completed::after {
+        content: '';
+        position: absolute;
+        width:3rem;
+        height:.1rem;
+        background-color: $primary;
+        bottom: .9rem;
+        right:-3.3rem;
+        z-index:999;
+
+        @include respond(tab-land) {
+            width:5.1rem;
+            right:-5.3rem;
+        }
+    }
+
+    &__bullet.last{
+        color: $color-white;
+        background-color: $primary;
+        border: 2px solid $primary;
+    }
+
+    &__container {
+        
+        .input-btn {
+            margin-right:1rem;
+        }
+
+        &__container:last-child {
+            margin-bottom: 2rem;
+        }  
+
+        background-color: $color-light-grey;
+        border-radius: .2rem;
+        padding:1rem;
+        margin-bottom:1rem;
+    }
+
+    &__side {
+        background-color: $color-light-grey;
+        padding: 1rem;
+        border-radius: .7rem;
+       
+        
+       
+
+        @include respond(tab-land) {
+            position: absolute;
+            width: 75%;
+            top: 7rem;
+           
+        }
+    }
+
+}
+

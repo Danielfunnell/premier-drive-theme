@@ -1,0 +1,109 @@
+.testomonials-box {
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    padding: .5rem;
+    border-radius: 3px;
+    
+    min-height: 14rem;
+    vertical-align: middle;
+    
+
+    @include respond(tab-land) {
+        width: 75%;
+        padding: 1.5rem;
+        vertical-align: middle;
+        transform: skewX(-10deg);
+    }
+
+    @include respond(desktop) {
+        margin-bottom: 5rem;
+    }
+
+
+    &__name {
+        text-align:right;
+        
+
+        @include respond(tab-land) {
+            text-align: left;
+            margin-left: 11rem;
+        }
+    }
+
+    &__picture  {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        margin-right: .3rem;
+        float: left;
+        shape-outside: circle();
+        margin: 1rem 1rem 1rem 0;
+        
+        
+        @include respond(tab-land) {
+            vertical-align: middle;
+            transform: skewX(10deg);
+        }
+    }
+
+    &__blockquote {
+        line-height: 145%;
+        text-align: left;
+        margin-left: 1rem;
+        
+        
+
+        @include respond(tab-land) {
+            margin-left: 10rem;
+            transform: skewX(10deg);
+        }
+    }
+   
+}
+
+.testomonials-box:first-child {
+    margin-top: 2rem;
+}
+
+.arrow-container{
+
+    &_btn--back{
+        border:none;
+        background-color:transparent;
+    }
+
+    &_btn--forward {
+        border:none;
+        background-color:transparent;
+    }
+
+
+    &_btn--back:focus {
+        outline: none;
+      }
+
+      &_btn--forward:focus {
+        outline: none;
+      }
+
+    @include respond(desktop) {
+        &_btn--back {
+        
+       
+        position: absolute;
+        left:17rem;
+        top:19rem;
+        }
+    
+      &_btn--forward {
+        
+   
+        position: absolute;
+        right:17rem;
+        top:19rem;
+        }
+    
+    }
+}
+

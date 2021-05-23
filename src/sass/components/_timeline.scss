@@ -1,0 +1,62 @@
+.timeline {
+    
+    &__para{
+        font-size: 1rem;
+        line-height: 1.75em;
+        border-top: 3px dashed $color-dark-grey;
+        border-width: 3px;
+        margin: 0;
+        padding: 40px;
+        counter-increment: section;
+        position: relative;
+        
+        
+            &:before {
+            content: counter(section);
+            position: absolute;
+            border-radius: 50%;
+            padding: .7rem;
+            height: 2rem;
+            width: 2rem;
+            background-color: $color-coral;
+            text-align: center;
+            line-height: .5rem;
+            color: $color-white;
+            font-size: 1rem;
+        }
+          
+    }
+
+    &__para:nth-child(odd) {
+        border-right: 3px dashed $color-dark-grey;
+        padding-left: 0;
+        
+        &:before {
+          left: 100%; 
+          margin-left: -1rem;
+        }
+    }
+
+    &__para:nth-child(even) {
+        border-left: 3px dashed $color-dark-grey;
+        padding-right: 0;
+        
+        &:before {
+          right: 100%; 
+          margin-right: -1rem;
+        }
+    }
+
+    &__para:first-child {
+        border-top: 0;
+        border-top-right-radius:0;
+        border-top-left-radius:0;
+    }
+
+    &__para:last-child {
+        border-bottom-right-radius:0;
+        border-bottom-left-radius:0;
+    }
+        
+}
+

@@ -1,0 +1,43 @@
+.login {
+    padding-top: 0;
+}
+
+.login form {
+    background-color: $color-white;
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(63, 49, 49, 0.1);
+    top:-4.5rem;
+    left:0;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+    margin-bottom: 2rem;
+
+    
+}
+
+.input{
+    border-radius: .3rem 0rem 0rem .3rem;
+    width: 70%;
+    height: calc(1.5em + 1rem + 2px);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    z-index:999;
+
+   
+}
+
+
+#wp-submit {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.login h1 a{
+    background-image: url(./../../src/img/logowebsite.jpg);
+    background-size: 175px;
+    background-position: center;
+    width: 200px;
+}
+

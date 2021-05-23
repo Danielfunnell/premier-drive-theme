@@ -1,0 +1,73 @@
+footer {
+    background-color: $color-secondary;   
+    padding: 4rem 1rem;
+    color: $color-silver;
+    font-size: 80%;
+    position: relative;
+
+    @include respond(tab-land) { 
+        padding: 5rem 0;
+    }
+
+.footer__menu{
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.footer__list{
+    padding:.3rem;
+    font-size: 120%;
+    
+    
+    a{
+       color:$color-silver;
+    }
+}
+
+.icon-small--footer {
+    color: $color-silver;
+    float:left;
+    font-size: 200%;
+    /*line up icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top:-5px;
+    margin-right:1rem;
+}
+
+.icon-para {
+    display:block;
+}
+
+
+}
+
+.footer__bottom {
+    background-color: #23272f;
+    position: absolute;
+    bottom:0;
+    right:0;
+    border-radius: 3px;
+    padding: 1rem 1rem;
+}
+
+footer h5 {
+    border-bottom: 1px solid darken($color-silver, 50%);
+    padding-bottom: 1rem;
+
+    @include respond(tab-land) { 
+        border-bottom: none;
+    }
+}
+
+.social-links{
+    margin-top: 1rem;
+}
+
+.sub-text-box{
+    
+
+    @include respond(tab-land) { 
+        margin-left: 10rem;
+    }
+}

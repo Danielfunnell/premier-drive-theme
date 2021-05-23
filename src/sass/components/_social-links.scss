@@ -1,0 +1,22 @@
+.social-links {
+    
+
+    &__list {
+        list-style: none;
+        display:inline;
+        padding:6px
+
+    }
+
+    &__anchor {
+        font-size: 250%;
+        color: rgba(255, 255, 255, 0.726);
+        }
+    
+    &__anchor:hover,
+    &__anchor:active{
+            color: $primary;
+        }
+}
+
+

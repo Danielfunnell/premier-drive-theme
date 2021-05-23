@@ -1,0 +1,224 @@
+.hero {
+    background-image: linear-gradient(103deg,
+        rgba($color-secondary, .9999) 35%,
+        rgba($color-secondary, 0.8) 70%,
+        transparent 100%),url(./../../src/css/img/driving-schools-ashford-hero-min.jpg);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 100%);
+        height: 85vh;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+    
+        
+    
+
+       
+
+
+        @include respond(tab-port) {
+            background-image: linear-gradient(103deg,
+            rgba($color-secondary, .9999) 35%,
+            rgba($color-secondary, 0.8) 60%,
+            transparent 100%),url(./../../src/css/img/driving-schools-ashford-hero-min.jpg);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 0% 100%);
+        }
+
+        &--intensive {
+            background-image: linear-gradient(103deg,
+            rgba($color-secondary, .9999) 35%,
+            rgba($color-secondary, 0.8) 70%,
+            transparent 100%),url(./../../src/css/img/clock.jpg);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 100%);
+            height: 85vh;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+
+            @include respond(tab-port) {
+                background-image: linear-gradient(103deg,
+                rgba($color-secondary, .9999) 35%,
+                rgba($color-secondary, 0.8) 70%,
+                transparent 100%),url(./../../src/css/img/clock.jpg);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 0% 100%);
+            }
+
+        }
+
+        // &--book {
+        //     background-image: linear-gradient(103deg,
+        //     rgba($color-secondary, .9999) 35%,
+        //     rgba($color-secondary, 0.8) 70%,
+        //     transparent 100%),url(img/fiesta-min.jpg);
+        //     clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 100%);
+        //     height: 85vh;
+        //     position: relative;
+        //     background-size: cover;
+        //     background-position: center;
+
+        //     @include respond(tab-port) {
+        //         background-image: linear-gradient(103deg,
+        //         rgba($color-secondary, .9999) 35%,
+        //         rgba($color-secondary, 0.8) 70%,
+        //         transparent 100%),url(img/fiesta-min.jpg);
+        //         clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 0% 100%);
+        //     }
+
+        // }
+
+        
+        // &--our-driving-lessons {
+        //     background-image: linear-gradient(103deg,
+        //     rgba($color-secondary, .9999) 35%,
+        //     rgba($color-secondary, 0.8) 70%,
+        //     transparent 100%),url(img/person-driving.jpg);
+        //     clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 100%);
+        //     height: 85vh;
+        //     position: relative;
+        //     background-size: cover;
+        //     background-position: center;
+
+        //     @include respond(tab-port) {
+        //         background-image: linear-gradient(103deg,
+        //         rgba($color-secondary, .9999) 35%,
+        //         rgba($color-secondary, 0.8) 70%,
+        //         transparent 100%),url(img/person-driving.jpg);
+        //         clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 0% 100%);
+        //     }
+
+
+        // }
+        
+
+    &__text-box {
+
+            top:2%;
+            color:$color-silver;
+            position: absolute;
+            margin: 0 auto;
+            padding: 1rem;
+            font-size: 60%;
+            
+
+            &--vertical-align {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 350%;
+
+        
+            }
+
+            &--banner {
+                height: 90%; 
+                width:100%;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        @include respond(small-phone) {
+            top:6%;
+            font-size: 80%;
+        }
+
+        &__span{
+            color:$primary;
+        }
+
+    
+        
+        
+        @include respond(tab-port) {
+            text-align:left;
+            margin-left: 2rem;
+            position: relative;
+            max-width: 85%;
+            font-size: 100%;
+            top:-5%;
+        }
+
+        @include respond(tab-land) {
+            
+            top: -5%;
+           
+           
+        }
+
+        
+
+        @include respond(desktop) {
+            max-width: 60%;
+            position: absolute;
+            margin: 2rem;
+            top: 40%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__text-box h1 {
+        font-size: 275%;
+
+        @include respond(phone) {
+            font-size: 400%;
+        }
+    
+        @include respond(tab-port) {
+            font-size: 400%;
+        }
+    }
+
+    &__sub-heading {
+        font-weight: 300;
+        font-size: 125%;
+        margin: 1rem 0;
+    }
+
+    &__list {
+        margin:3rem 0;
+        list-style: none;
+        
+    }
+
+    &__paragraph{
+        color: $color-white;
+    }
+
+   
+    
+}
+
+.small-btn {
+    display:none;
+    opacity: 0;
+    visibility: hidden;
+    
+    @include respond(tab-port) {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        margin-top: -4rem;
+    }
+}
+
+.large-btn {
+    display:block;
+    margin-top: 2rem;
+
+    @include respond(tab-port) {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.banner {
+    background-position-x: 95%;
+    
+  
+
+    @include respond(tab-port) {
+        background-size: cover;
+    }
+}

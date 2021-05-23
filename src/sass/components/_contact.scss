@@ -1,0 +1,57 @@
+.icon-container-contact {
+    position: relative;
+    padding: .5rem;
+    text-align: left;
+
+    @include respond(phone) {
+        padding: 3.125rem;
+    }
+
+    &__icon {
+        position: absolute;
+        line-height: 120%;
+        top:-.3rem;
+        left:.3rem;
+        color: $primary;
+        font-size: 2rem;
+        
+        
+    }
+
+    &__icon--mobile {
+        position: absolute;
+        color: $primary;
+        font-size: 2.3rem;
+        line-height: 120%;
+        top:-.3rem;
+        left:.6rem;
+
+        @include respond(phone) {
+            position: absolute;
+            margin-left: .4rem;
+            
+        }
+    }
+
+    &__individual {
+        width:100%;
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+
+    &__para {
+        display: inline-block;
+        margin-left: 3rem;
+    }
+
+    &__heading {
+        text-align: center;
+    
+        @include respond(tab-port) {
+            text-align: left;
+    }
+    
+    }
+
+}
+
